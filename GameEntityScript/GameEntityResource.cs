@@ -17,7 +17,7 @@ namespace GameEntityScript
                 (threadCount, repository) => new ServerEventNetworkLayer(threadCount, repository),
                 (entity, threadCount) => (entity.Id % threadCount),
                 (entityId, entityType, threadCount) => (entityId % threadCount),
-                (threadId) => new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 600),
+                (threadId) => new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 300),
                 new IdProvider()
             );
         }
