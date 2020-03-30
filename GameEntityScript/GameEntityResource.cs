@@ -26,6 +26,7 @@ namespace GameEntityScript
         {
             Alt.Export("createGameEntity", new Func<long, Vector3, int, uint, ulong>(this.CreateGameEntity));
             Alt.Export("removeGameEntity", new Action<long, long>(this.RemoveGameEntity));
+            Alt.Export("doesGameEntityExist", new Func<long, long, bool>(this.DoesGameEntityExist));
             Alt.Export("setGameEntityPosition", new Action<long, long, Vector3>(this.SetGameEntityPosition));
             Alt.Export("getGameEntityPosition", new Func<long, long, Vector3>(this.GetGameEntityPosition));
             Alt.Export("getGameEntityRange", new Func<long, long, uint>(this.GetGameEntityRange));
@@ -58,6 +59,13 @@ namespace GameEntityScript
             IEntity entity = this.GetGameEntity(id, type);
 
             AltEntitySync.RemoveEntity(entity);
+        }
+
+        private bool DoesGameEntityExist(long id, long type)
+        {
+            IEntity entity = GetGameEntity(id, type);
+
+            return entity != null;
         }
 
         private void SetGameEntityPosition(long id, long type, Vector3 position)
