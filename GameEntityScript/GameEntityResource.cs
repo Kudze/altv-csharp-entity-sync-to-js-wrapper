@@ -24,7 +24,7 @@ namespace GameEntityScript
 
         private void RegisterExports()
         {
-            Alt.Export("createGameEntity", new Func<long, Vector3, int, uint, ulong>(this.CreateGameEntity));
+            Alt.Export("createGameEntity", new Func<long, Vector3, int, int, ulong>(this.CreateGameEntity));
             Alt.Export("removeGameEntity", new Action<long, long>(this.RemoveGameEntity));
             Alt.Export("doesGameEntityExist", new Func<long, long, bool>(this.DoesGameEntityExist));
             Alt.Export("setGameEntityPosition", new Action<long, long, Vector3>(this.SetGameEntityPosition));
@@ -47,9 +47,9 @@ namespace GameEntityScript
             return entity;
         }
 
-        private ulong CreateGameEntity(long type, Vector3 position, int dimension, uint range)
+        private ulong CreateGameEntity(long type, Vector3 position, int dimension, int range)
         {
-            IEntity entity = AltEntitySync.CreateEntity((ulong) type, position, dimension, range);
+            IEntity entity = AltEntitySync.CreateEntity((ulong) type, position, dimension, (uint) range);
 
             return entity.Id;
         }
