@@ -1,0 +1,8 @@
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\GameEntityScript\obj\Release\netcoreapp3.1\GameEntityScript.csprojAssemblyReference.cache
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\GameEntityScript\obj\Release\netcoreapp3.1\GameEntityScript.AssemblyInfoInputs.cache
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\GameEntityScript\obj\Release\netcoreapp3.1\GameEntityScript.AssemblyInfo.cs
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\GameEntityScript\obj\Release\netcoreapp3.1\GameEntityScript.dll
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\GameEntityScript\obj\Release\netcoreapp3.1\GameEntityScript.pdb
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\Build\netcoreapp3.1\GameEntityScript.deps.json
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\Build\netcoreapp3.1\GameEntityScript.dll
+D:\Garage\C#\Programme\altv-csharp-entity-sync-to-js-wrapper\Build\netcoreapp3.1\GameEntityScript.pdb

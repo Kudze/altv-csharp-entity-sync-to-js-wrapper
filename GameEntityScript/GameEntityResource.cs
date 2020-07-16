@@ -14,6 +14,7 @@ namespace GameEntityScript
             AltEntitySync.Init(
                 1,
                 100,
+                true,
                 (threadCount, repository) => new ServerEventNetworkLayer(threadCount, repository),
                 (entity, threadCount) => (entity.Id % threadCount),
                 (entityId, entityType, threadCount) => (entityId % threadCount),
